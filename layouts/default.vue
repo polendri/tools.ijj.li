@@ -3,37 +3,46 @@
     <v-navigation-drawer
       v-model="drawerOpen"
       app
+      clipped
     >
-      <v-list>
-        <v-list-tile
-          v-for="(item, i) in items"
-          :to="item.to"
+      <v-list dense>
+        <v-list-group
+          v-for="(toolGroup, i) in toolGroups"
           :key="i"
-          router
-          exact
+          :prepend-icon="toolGroup.icon"
+          value="true"
         >
-          <v-list-tile-action>
-            <v-icon v-html="item.icon" />
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title v-text="item.title" />
-          </v-list-tile-content>
-        </v-list-tile>
+          <v-list-tile slot="activator">
+            <v-list-tile-title>{{ toolGroup.title }}</v-list-tile-title>
+          </v-list-tile>
+          <v-list-tile
+            v-for="(tool, i) in toolGroup.tools"
+            :to="tool.to"
+            :key="i"
+            router
+            exact
+          >
+            <v-list-tile-action/>
+            <v-list-tile-content>
+              <v-list-tile-title v-text="tool.title" />
+            </v-list-tile-content>
+          </v-list-tile>
+        </v-list-group>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar app>
+    <v-toolbar
+      :clipped-left="true"
+      app
+    >
       <v-toolbar-side-icon @click="drawerOpen = !drawerOpen" />
-      <v-toolbar-title v-text="title"/>
+      <v-toolbar-title v-text="$t('appName')"/>
     </v-toolbar>
     <v-content>
-      <v-container>
+      <v-container fill-height>
         <nuxt />
       </v-container>
     </v-content>
-    <v-footer
-      app
-      inset
-    >
+    <v-footer app>
       <v-layout>
         <v-flex text-xs-center>
           <span class="text-xs-center">
@@ -50,10 +59,15 @@ export default {
   data() {
     return {
       drawerOpen: null,
-      items: [
-        { icon: 'code', title: this.$t('tools.uriEncoder.title'), to: '/uri-encoder' }
-      ],
-      title: 'ijj.li Tools'
+      toolGroups: {
+        programming: {
+          icon: 'code',
+          title: this.$t('toolGroups.programming'),
+          tools: [
+            { title: this.$t('tools.uriEncoder.title'), to: '/uri-encoder' },
+          ],
+        },
+      },
     }
   },
   head() {

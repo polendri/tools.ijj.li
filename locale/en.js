@@ -14,9 +14,15 @@ export default {
 
   appName: 'ijj.li Tools',
   copyright: '© 2018 Paul Hendry',
+  toolGroups: {
+    programming: 'Programming',
+  },
   tools: {
+    home: {
+      description: 'ijj.li Tools is an assortment of handy utilities. Pick one from the menu to get started.',
+    },
     uriEncoder: {
-      title: "URI Encoder/Decoder",
+      title: 'URI Encoder/Decoder',
     },
   },
 }
