@@ -1,5 +1,18 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify'
+import VApp from 'vuetify/es5/components/VApp'
+import VContainer from 'vuetify/es5/components/VGrid/VContainer'
+import VContent from 'vuetify/es5/components/VGrid/VContent'
+import VFlex from 'vuetify/es5/components/VGrid/VFlex'
+import VFooter from 'vuetify/es5/components/VFooter'
+import VLayout from 'vuetify/es5/components/VGrid/VLayout'
+import VList, { VListTile, VListTileContent, VListTileTitle } from 'vuetify/es5/components/VList'
+import VListGroup from 'vuetify/es5/components/VList/VListGroup'
+import VListTileAction from 'vuetify/es5/components/VList/VListTileAction'
+import VNavigationDrawer from 'vuetify/es5/components/VNavigationDrawer'
+import VTextarea from 'vuetify/es5/components/VTextarea'
+import VToolbar, { VToolbarTitle } from 'vuetify/es5/components/VToolbar'
+import VToolbarSideIcon from 'vuetify/es5/components/VToolbar/VToolbarSideIcon'
 
 import en from '../locale/en'
 
@@ -11,6 +24,25 @@ function getBrowserLocaleOrDefault() {
 }
 
 Vue.use(Vuetify, {
+  components: {
+    VApp,
+    VContainer,
+    VContent,
+    VFlex,
+    VFooter,
+    VLayout,
+    VList,
+    VListGroup,
+    VListTile,
+    VListTileAction,
+    VListTileContent,
+    VListTileTitle,
+    VNavigationDrawer,
+    VTextarea,
+    VToolbar,
+    VToolbarSideIcon,
+    VToolbarTitle,
+  },
   lang: {
     locales,
     current: getBrowserLocaleOrDefault()
