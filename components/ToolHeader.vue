@@ -12,5 +12,10 @@ export default {
     title: { type: String, required: true },
     descriptionHtml: { type: String, default: '' },
   },
+  head() {
+    return {
+      title: `${this.title} - ${this.$t('appName')}`,
+    }
+  },
 }
 </script>
