@@ -1,10 +1,10 @@
 <template>
-  <v-layout
-    wrap
-  >
+  <v-layout wrap>
     <v-flex xs12>
-      <h1 class="pb-4">{{ $t('tools.uriEncoder.title') }}</h1>
-      <div v-html="$t('tools.uriEncoder.descriptionHtml')"/>
+      <tool-header
+        :title="$t('tools.uriEncoder.title')"
+        :description-html="$t('tools.uriEncoder.descriptionHtml')"
+      />
     </v-flex>
     <v-flex xs12>
       <v-textarea
@@ -12,7 +12,6 @@
         :label="$t('tools.uriEncoder.decodedValueLabel')"
         :value="decoded.value"
         box
-        placeholder="M &amp; M"
         @input="onDecodedValueChange"
       />
     </v-flex>
@@ -23,7 +22,6 @@
         :rules="[() => encoded.valid || $t('tools.uriEncoder.encodedValueInvalid')]"
         :value="encoded.value"
         box
-        placeholder="M%20%26%20M"
         @input="onEncodedValueChange"
       />
     </v-flex>
@@ -31,7 +29,10 @@
 </template>
 
 <script>
+import ToolHeader from '~/components/ToolHeader';
+
 export default {
+  components: { ToolHeader },
   data() {
     return {
       decoded: {
@@ -41,7 +42,7 @@ export default {
         value: '',
         valid: true,
       },
-    }
+    };
   },
   methods: {
     onDecodedValueChange(decodedValue) {

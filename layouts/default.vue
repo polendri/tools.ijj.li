@@ -67,6 +67,13 @@ export default {
             { title: this.$t('tools.uriEncoder.title'), to: '/uri-encoder' },
           ],
         },
+        writing: {
+          icon: 'edit',
+          title: this.$t('toolGroups.writing'),
+          tools: [
+            { title: this.$t('tools.wordCount.title'), to: '/word-count' },
+          ],
+        },
       },
     }
   },
