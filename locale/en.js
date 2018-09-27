@@ -15,10 +15,22 @@ export default {
   appName: 'ijj.li Tools',
   copyright: '© 2018 Paul Hendry',
   toolGroups: {
+    math: 'Math',
     programming: 'Programming',
     writing: 'Writing',
   },
   tools: {
+    calculator: {
+      title: 'Calculator',
+      descriptionHtml: `<p>Simple text-based calculator.</p>
+        <p>Handles arithmetic operators (<var>+</var>, <var>*</var>),
+        common functions (<var>sqrt(2)</var>, <var>4^2</var>, <var>cos(45 deg)</var>),
+        and constants like <var>pi</var> and <var>e</var>.</p>`,
+      expressionLabel: 'Expression',
+      functionResultErrorMessage: 'Unexpected end of expression',
+      unitResultErrorMessage: 'Unexpected symbol',
+      resultLabel: 'Result',
+    },
     home: {
       description: 'ijj.li Tools is an assortment of handy utilities. Pick one from the menu to get started.',
     },

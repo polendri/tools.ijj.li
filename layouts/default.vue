@@ -10,7 +10,6 @@
           v-for="(toolGroup, i) in toolGroups"
           :key="i"
           :prepend-icon="toolGroup.icon"
-          value="true"
         >
           <v-list-tile slot="activator">
             <v-list-tile-title>{{ toolGroup.title }}</v-list-tile-title>
@@ -59,22 +58,29 @@ export default {
   data() {
     return {
       drawerOpen: null,
-      toolGroups: {
-        programming: {
+      toolGroups: [
+        {
+          icon: 'functions',
+          title: this.$t('toolGroups.math'),
+          tools: [
+            { title: this.$t('tools.calculator.title'), to: '/calculator' },
+          ],
+        },
+        {
           icon: 'code',
           title: this.$t('toolGroups.programming'),
           tools: [
             { title: this.$t('tools.uriEncoder.title'), to: '/uri-encoder' },
           ],
         },
-        writing: {
+        {
           icon: 'edit',
           title: this.$t('toolGroups.writing'),
           tools: [
             { title: this.$t('tools.wordCount.title'), to: '/word-count' },
           ],
         },
-      },
+      ],
     }
   },
   head() {
