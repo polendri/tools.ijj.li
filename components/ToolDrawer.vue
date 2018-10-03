@@ -1,7 +1,9 @@
 <template>
   <v-navigation-drawer
+    :value="value"
     app
     clipped
+    @input="$emit('input', $event)"
   >
     <v-list dense>
       <v-list-group
@@ -31,6 +33,9 @@
 
 <script>
 export default {
+  props: {
+    value: { type: Boolean, default: null },
+  },
   data() {
     return {
       toolGroups: [
