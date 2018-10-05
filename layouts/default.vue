@@ -4,6 +4,7 @@
     <v-toolbar
       :clipped-left="true"
       app
+      color="secondary"
     >
       <v-toolbar-side-icon @click="drawerOpen = !drawerOpen" />
       <img

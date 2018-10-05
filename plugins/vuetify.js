@@ -52,9 +52,9 @@ Vue.use(Vuetify, {
     current: getBrowserLocaleOrDefault()
   },
   theme: {
-    primary: '#0091ea',
-    accent: '#0091ea',
-    secondary: '#757575',
+    primary: '#dd2c00',
+    accent: '#dd2c00',
+    secondary: '#455a64',
     info: '#ab47bc',
     warning: '#ff9800',
     error: '#f44336',

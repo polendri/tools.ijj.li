@@ -6,7 +6,7 @@
     justify-center
   >
     <span
-      class="secondary--text text-xs-center"
+      class="grey--text text-xs-center"
     >
       {{ $t('tools.home.description') }}
     </span>
