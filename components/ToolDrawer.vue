@@ -44,6 +44,7 @@ export default {
           title: this.$t('toolGroups.math'),
           tools: [
             { title: this.$t('tools.calculator.title'), to: '/calculator' },
+            { title: this.$t('tools.radixConverter.title'), to: '/radix-converter' },
           ],
         },
         {

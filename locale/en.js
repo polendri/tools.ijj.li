@@ -1,4 +1,5 @@
 export default {
+  /* Vuetify translations */
   dataIterator: {
     rowsPerPageText: 'Items per page:',
     rowsPerPageAll: 'All',
@@ -11,9 +12,9 @@ export default {
     rowsPerPageText: 'Rows per page:'
   },
   noDataText: 'No data available',
+  /* */
 
   appName: 'ijj.li Tools',
-  copyright: '© 2018 Paul Hendry',
   toolGroups: {
     math: 'Math',
     programming: 'Programming',
@@ -33,6 +34,17 @@ export default {
     },
     home: {
       description: 'ijj.li Tools is an assortment of handy utilities. Pick one from the menu to get started.',
+    },
+    radixConverter: {
+      title: 'Radix (Base) Converter',
+      descriptionHtml: '<p>Converts a number from one <a href="https://en.wikipedia.org/wiki/Radix">base</a> to another.</p>',
+      inputLabel: 'Number',
+      outputLabel: 'Result',
+      radixLabel: 'Radix',
+      binaryRadixName: 'binary',
+      decimalRadixName: 'decimal',
+      hexadecimalRadixName: 'hexadecimal',
+      invalidInputErrorMessage: 'Number must be valid in the specified radix',
     },
     uriEncoder: {
       title: 'URI Encoder/Decoder',

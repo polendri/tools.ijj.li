@@ -9,7 +9,7 @@
       <v-toolbar-title v-text="$t('appName')"/>
     </v-toolbar>
     <v-content>
-      <v-container>
+      <v-container grid-list-md>
         <nuxt />
       </v-container>
     </v-content>
@@ -17,7 +17,7 @@
       <v-layout>
         <v-flex text-xs-center>
           <span class="text-xs-center">
-            {{ $t('copyright') }}
+            © 2018 Paul Hendry
           </span>
         </v-flex>
       </v-layout>

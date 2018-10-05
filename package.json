@@ -19,6 +19,7 @@
     "mathjs": "^5.1.2",
     "npm": "^6.4.1",
     "nuxt": "^2.0.0",
+    "vuelidate": "^0.7.4",
     "vuetify": "^1.2.4"
   },
   "devDependencies": {

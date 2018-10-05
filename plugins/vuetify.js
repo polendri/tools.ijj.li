@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 import VApp from 'vuetify/es5/components/VApp'
+import VAutocomplete from 'vuetify/es5/components/VAutocomplete'
 import VContainer from 'vuetify/es5/components/VGrid/VContainer'
 import VContent from 'vuetify/es5/components/VGrid/VContent'
 import VFlex from 'vuetify/es5/components/VGrid/VFlex'
@@ -11,6 +12,7 @@ import VListGroup from 'vuetify/es5/components/VList/VListGroup'
 import VListTileAction from 'vuetify/es5/components/VList/VListTileAction'
 import VNavigationDrawer from 'vuetify/es5/components/VNavigationDrawer'
 import VTextarea from 'vuetify/es5/components/VTextarea'
+import VTextField from 'vuetify/es5/components/VTextField'
 import VToolbar, { VToolbarTitle } from 'vuetify/es5/components/VToolbar'
 import VToolbarSideIcon from 'vuetify/es5/components/VToolbar/VToolbarSideIcon'
 
@@ -26,6 +28,7 @@ function getBrowserLocaleOrDefault() {
 Vue.use(Vuetify, {
   components: {
     VApp,
+    VAutocomplete,
     VContainer,
     VContent,
     VFlex,
@@ -39,6 +42,7 @@ Vue.use(Vuetify, {
     VListTileTitle,
     VNavigationDrawer,
     VTextarea,
+    VTextField,
     VToolbar,
     VToolbarSideIcon,
     VToolbarTitle,
