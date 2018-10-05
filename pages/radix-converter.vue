@@ -7,8 +7,8 @@
       />
     </v-flex>
     <v-flex
-      xs8
-      lg4
+      xs7
+      md3
     >
       <v-text-field
         v-model="$v.inputValue.$model"
@@ -17,10 +17,10 @@
       />
     </v-flex>
     <v-flex
-      xs4
-      lg2
+      xs5
+      md3
     >
-      <v-autocomplete
+      <v-select
         v-model="inputRadix"
         :label="$t('tools.radixConverter.radixLabel')"
         :items="radixOptions"
@@ -28,8 +28,8 @@
       />
     </v-flex>
     <v-flex
-      xs8
-      lg4
+      xs7
+      md3
     >
       <v-text-field
         :label="$t('tools.radixConverter.outputLabel')"
@@ -38,10 +38,10 @@
       />
     </v-flex>
     <v-flex
-      xs4
-      lg2
+      xs5
+      md3
     >
-      <v-autocomplete
+      <v-select
         v-model="outputRadix"
         :label="$t('tools.radixConverter.radixLabel')"
         :items="radixOptions"
