@@ -6,6 +6,12 @@
       app
     >
       <v-toolbar-side-icon @click="drawerOpen = !drawerOpen" />
+      <img
+        src="/logo.svg"
+        width="32"
+        height="32"
+        alt="Logo"
+      >
       <v-toolbar-title v-text="$t('appName')"/>
     </v-toolbar>
     <v-content>
