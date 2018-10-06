@@ -15,6 +15,7 @@ export default {
   /* */
 
   appName: 'ijj.li Tools',
+  darkThemeLabel: 'Dark theme',
   toolGroups: {
     math: 'Math',
     programming: 'Programming',
