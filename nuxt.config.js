@@ -1,4 +1,5 @@
-const pkg = require('./package')
+const pkg = require('./package');
+const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
 
 module.exports = {
   mode: 'spa',
@@ -62,6 +63,9 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+
+      // Use vuetify-loader
+      config.plugins.push(new VuetifyLoaderPlugin());
     }
   }
 }
