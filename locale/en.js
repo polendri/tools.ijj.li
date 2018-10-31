@@ -19,6 +19,7 @@ export default {
   toolGroups: {
     math: 'Math',
     programming: 'Programming',
+    time: 'Time',
     writing: 'Writing',
   },
   tools: {
@@ -46,6 +47,11 @@ export default {
       decimalRadixName: 'decimal',
       hexadecimalRadixName: 'hexadecimal',
       invalidInputErrorMessage: 'Number must be valid in the specified radix',
+    },
+    stopwatch: {
+      title: 'Stopwatch',
+      descriptionHtml: '',
+      resetLabel: 'Reset',
     },
     uriEncoder: {
       title: 'URI Encoder/Decoder',

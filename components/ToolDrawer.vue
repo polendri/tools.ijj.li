@@ -55,6 +55,13 @@ export default {
           ],
         },
         {
+          icon: 'access_time',
+          title: this.$t('toolGroups.time'),
+          tools: [
+            { title: this.$t('tools.stopwatch.title'), to: '/stopwatch' },
+          ],
+        },
+        {
           icon: 'edit',
           title: this.$t('toolGroups.writing'),
           tools: [

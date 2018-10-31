@@ -13,6 +13,7 @@ import VListGroup from 'vuetify/es5/components/VList/VListGroup'
 import VListTileAction from 'vuetify/es5/components/VList/VListTileAction'
 import VMenu from 'vuetify/es5/components/VMenu'
 import VNavigationDrawer from 'vuetify/es5/components/VNavigationDrawer'
+import VProgressCircular from 'vuetify/es5/components/VProgressCircular'
 import VSelect from 'vuetify/es5/components/VSelect'
 import VSpacer from 'vuetify/es5/components/VGrid'
 import VSwitch from 'vuetify/es5/components/VSwitch'
@@ -48,6 +49,7 @@ Vue.use(Vuetify, {
     VListTileTitle,
     VMenu,
     VNavigationDrawer,
+    VProgressCircular,
     VSelect,
     VSpacer,
     VSwitch,
