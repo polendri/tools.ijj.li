@@ -48,6 +48,13 @@ export default {
           ],
         },
         {
+          icon: 'music_note',
+          title: this.$t('toolGroups.music'),
+          tools: [
+            { title: this.$t('tools.tempo.title'), to: '/tempo' },
+          ],
+        },
+        {
           icon: 'code',
           title: this.$t('toolGroups.programming'),
           tools: [

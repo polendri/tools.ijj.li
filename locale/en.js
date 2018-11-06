@@ -18,6 +18,7 @@ export default {
   darkThemeLabel: 'Dark theme',
   toolGroups: {
     math: 'Math',
+    music: 'Music',
     programming: 'Programming',
     time: 'Time',
     writing: 'Writing',
@@ -52,6 +53,13 @@ export default {
       title: 'Stopwatch',
       descriptionHtml: '',
       resetLabel: 'Reset',
+    },
+    tempo: {
+      title: 'Tempo Tapper',
+      descriptionHtml: '<p>Tap the button in time to compute bpm (beats per minute).</p>',
+      tapLabel: 'Tap',
+      resetLabel: 'Reset',
+      bpmText: 'bpm',
     },
     uriEncoder: {
       title: 'URI Encoder/Decoder',
